@@ -1,0 +1,223 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+//Home banner
+.home {
+  transition: all .2s ease-in-out;
+  background-image: url('../../assets/images/images/bg.jpg');
+  height: 67vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  
+  .section-intro {
+    padding: 40px 0;
+
+    text-align: center;
+  }
+}
+
+
+.swiper-container {
+  margin-top: 40px;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+
+  border: 2px #007aff solid;
+  border-radius: 3px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//nav-styling
+.main__nav{
+  background-color: hsl(0, 0%, 6%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.66rem;
+  padding: 15px;
+  letter-spacing: 1px;
+  z-index: 2;
+
+  &--content{
+    .main--logo{
+      a{
+        img{
+          height: 40px;
+          margin-left: -8px;
+        }
+      }
+    }
+  }
+
+  ul{
+    li{
+      padding-right: 2.8em;
+      a{
+         color: hsl(0, 0%, 55%);
+         text-transform: uppercase;
+         font-weight: 600;
+
+          &:hover{
+          color: hsl(120, 100%, 50%);
+         }
+      }
+    }
+
+    .dropdown-menu{
+      background-color: hsl(0, 0%, 0%);
+      margin: 20px 0 0 -30px;
+      .dropdown-item{
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        padding: 10px 0 10px 30px;
+
+
+        &:hover{
+          background-color: hsl(0, 0%, 0%);
+        }
+      
+        .left-dropdown{
+          padding-left: 10px;
+          font-size: .8rem;
+        }
+      }
+    }
+
+    .dropdown-menu .dropdown-submenu {
+      display: none;
+      position: absolute;
+      left: 116%;
+      top: 127px;
+      }
+
+    .dropdown-menu > li:hover > .dropdown-submenu {
+      display: block;
+      }
+}
+
+  .buy-btn{
+    background-color: hsl(120, 100%, 50%);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 13px 45px;
+    border-radius: 50px;
+  }
+}
+
+//Banner Section
+.banner__main{
+  margin-top: 45px;
+  &--content{
+    color: hsl(0, 0%, 100%);
+    text-align: start;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 2.5em 0 .5em;
+  
+    h1{
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+      line-height: 1.3;
+    }
+    p{
+      font-size: .94rem;
+      color: hsl(0, 0%, 70%);
+      margin: 18px 0 30px 0;
+      line-height: 1.6;
+      word-spacing: 1px;
+    }
+  }
+
+  &--images{
+    .banner-image{
+      height: 92px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.banner__image{
+  position: relative;
+  &--logo{
+    position: absolute;
+    width: 277px;
+    text-align: right;
+    top: 375px;
+  }
+}
+
+//Secondary Section
+.section-secondary{
+  background-color: hsl(0, 0%, 6%);
+  padding: 70px;
+
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: hsl(120, 100%, 50%);
+    font-size: 1.45rem;
+    margin-left: 20px;
+
+  }
+
+  p{
+    margin: 1.438em auto;
+    text-align: center;
+    font-size: .95rem;
+    color: hsl(0, 0%, 55%);
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    line-height: 2;
+    padding-left: 0.8em;
+  }
+
+
+
+  .comfort__section{
+    &--content{  
+    padding: 35px 40px;
+      .col{
+        img{
+          width: 40px;
+          margin-bottom: 10px;
+        }
+        h4{
+          color: hsl(0, 0%, 100%);
+          font-family: 'Montserrat', sans-serif;
+          text-transform: uppercase;
+          font-size: 0.98rem;
+          font-weight: 700;
+          letter-spacing: 0.03rem;
+        }
+    
+        p{
+          text-align: start;
+          margin: 10px 0 0 0;
+          padding: 0;
+          width: 80%;
+          font-size: 0.93rem;
+          color: hsl(0, 0%, 55%);
+          line-height: 1.1;
+          font-weight: 500;
+          letter-spacing: 0.023rem;
+
+        }
+      }
+    }
+  }
+}
