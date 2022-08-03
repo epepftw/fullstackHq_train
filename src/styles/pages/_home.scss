@@ -7,7 +7,7 @@
 //Home banner
 .home {
   transition: all .2s ease-in-out;
-  background-image: url('../../assets/images/images/bg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.308)), url('../../assets/images/images/bg.jpg');
   height: 67vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -21,14 +21,9 @@
   }
 }
 
-
 .swiper-container {
   margin-top: 40px;
-  width: 500px;
-  height: 300px;
   overflow: hidden;
-
-  border: 2px #007aff solid;
   border-radius: 3px;
 }
 
@@ -46,7 +41,7 @@
   background-color: hsl(0, 0%, 6%);
   font-family: 'Poppins', sans-serif;
   font-size: 0.66rem;
-  padding: 15px;
+  padding: 13px;
   letter-spacing: 1px;
   z-index: 2;
 
@@ -158,8 +153,12 @@
     top: 375px;
   }
 }
+//Banner Section End
+
+//-----------------------------------------------------//
 
 //Secondary Section
+
 .section-secondary{
   background-color: hsl(0, 0%, 6%);
   padding: 70px;
@@ -186,38 +185,266 @@
     padding-left: 0.8em;
   }
 
+  .upper__layer, .bottom__layer{
+    flex: 1;
+    &--child{
+      img{
+        width: 40px;
+        margin-bottom: 10px;
+      }
 
+      h4{
+        color: hsl(0, 0%, 100%);
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 0.98rem;
+        font-weight: 700;
+        letter-spacing: 0.03rem;
+      }
+  
+      p{
+        text-align: start;
+        margin: 10px 0 0 0;
+        padding: 0;
+        width: 76%;
+        font-size: 0.93rem;
+        color: hsl(0, 0%, 55%);
+        line-height: 1.1;
+        font-weight: 500;
+        letter-spacing: 0.023rem;
 
-  .comfort__section{
-    &--content{  
-    padding: 35px 40px;
-      .col{
-        img{
-          width: 40px;
-          margin-bottom: 10px;
-        }
-        h4{
-          color: hsl(0, 0%, 100%);
-          font-family: 'Montserrat', sans-serif;
-          text-transform: uppercase;
-          font-size: 0.98rem;
-          font-weight: 700;
-          letter-spacing: 0.03rem;
-        }
+      }
+    }
+  }
+
+  .upper__layer{
     
-        p{
-          text-align: start;
-          margin: 10px 0 0 0;
-          padding: 0;
-          width: 80%;
-          font-size: 0.93rem;
-          color: hsl(0, 0%, 55%);
-          line-height: 1.1;
-          font-weight: 500;
-          letter-spacing: 0.023rem;
+    margin-top: 35px;
 
+    .first-child{
+      margin-left: 40px;
+    }
+
+    .second-child{
+      margin: 0 -46px 0 -22px;
+    }
+
+    .third-child{
+      p{
+        width: 90%;
+      }
+    }
+  }
+
+  .bottom__layer{
+    margin: 69px 39px 0 39px;
+
+    .first-child{
+      p{
+        width: 64%;
+      }
+    }
+
+    .second-child{
+
+      margin-left: -90px;
+
+      p{
+        width: 80%;
+      }
+    }
+
+    .third-child{
+
+      margin-right: -166px;
+
+      p{
+        
+        width: 68%;
+      }
+    }
+  }
+
+  .comfort-section-divider{
+    width: 102.8%;
+    border-top: 0.03rem solid hsl(0, 0%, 55%);
+    margin: 51px 0 0 -7px;
+  }
+
+  .product__images{
+    
+    .swiper-container{
+      padding-bottom: 60px;
+
+      .swiper-pagination{
+        top: 92.5%;
+        left: .7%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+  
+        .swiper-pagination-bullet{
+          background-color: #fff;
+        }
+
+        .swiper-pagination-bullet-active{
+          background-color: hsl(120, 100%, 50%);
+          position: relative;
+          height: 8px;
+          width: 8px;
+        }
+
+        .swiper-pagination-bullet-active::before{
+          background-color: #0F0F0F;
+          border: 1px solid hsl(120, 100%, 50%);
+          content: '';
+          display: block;
+          position: absolute;
+          top: -2.6px;
+          left: -2.6px;
+          height: 14px;
+          border-radius: 50%;
+          width: 14px;
+          z-index: -1;
+        }
+      }
+    }
+
+    h2{
+      margin-top: 53px;
+    }
+
+    .swiper-wrapper{
+      margin-top: 7px;
+    }
+
+    .image-content{
+
+
+      .middle{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0, 0, 0, 0.808);
+
+        
+        .middle-text{
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+
+          .view-green{
+            background-color: #0f0;
+            border: 2px solid #0f0;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 50px;
+            font-size: .7rem;
+            padding: 13px 0;
+            width: 180px;
+            letter-spacing: 0.05em;
+            font-family: Poppins;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+
+            &:hover{
+              background-color: rgb(8, 8, 8);
+              border: 2px solid #0f0;
+              color: #0f0;
+            }
+          }
+        }
+      }
+      
+      img{
+        max-width: 100%;
+        max-height: 100%;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        opacity: 1;
+        display: block;
+      }
+
+      &:hover .image{
+        opacity: 0.3;
+      }
+
+      &:hover .middle{
+        opacity: 1;
+
+        .middle-text{
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+
+          .view-green{
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 50px;
+            font-size: .7rem;
+            padding: 13px 0;
+            width: 180px;
+            letter-spacing: 0.05em;
+            font-family: Poppins;
+            cursor: pointer;
+          }
         }
       }
     }
   }
 }
+
+//Secondary Section End
+
+//-----------------------------------------------------//
+
+//THX Section
+
+.section-thx{
+  height: 700px;
+  background-image: url('../../assets/images/images/razer-nari-usp02-desktop-wireless-gaming-headset.jpg');
+  
+  .thx-content{
+    margin-left: 10px;
+  }
+
+  h2{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: hsl(120, 100%, 50%);
+    font-size: 1.45rem;
+  }
+
+  p{
+    font-weight: 500;
+    color: #979797;
+    width: 77%;
+    font-family: 'Montserrat';
+    font-size: 1.21rem;
+    line-height: 1.86rem;
+    margin: 20px 0 40px 0;
+  }
+  
+  img{
+    width: 140px;
+  }
+}
+
+//THX Section End
