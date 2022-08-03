@@ -444,7 +444,22 @@
   
   img{
     width: 140px;
+    margin: -17px 0 12px -3px;
   }
 }
 
 //THX Section End
+
+//-----------------------------------------------------//
+
+.products{
+  margin: auto;
+  justify-content: center;
+  h2{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: hsl(120, 100%, 50%);
+    font-size: 1.45rem;
+  }
+}
