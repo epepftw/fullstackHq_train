@@ -51,10 +51,10 @@ $subtext-color: hsl(0,0%,55%);
 .main-nav{
   background-color: $bg-color;
   font-family: 'Montserrat', sans-serif;
-  font-size: .7rem;
-  padding: 14px;
+  font-size: .66rem;
+  padding: 16px;
   letter-spacing: 1px;
-  font-weight: 800;
+  font-weight: 700;
   z-index: 2;
 
   &--content{
@@ -73,11 +73,10 @@ $subtext-color: hsl(0,0%,55%);
       // &:focus-within .dropdown-menu{
       //   display: block;
       // }
-      padding-right: 2.3em;
+      padding-right: 2.65em;
       .nav-link{
          color: $subtext-color;
          text-transform: uppercase;
-         font-weight: 600;
 
           &:hover{
           color: $primary-color;
@@ -95,13 +94,16 @@ $subtext-color: hsl(0,0%,55%);
         padding: 10px 0 10px 30px;
         color: $subtext-color;
         padding-right: 2.9em;
+        font-weight: 700;
+        text-transform: uppercase;
+        
 
         &:hover{
           background-color: $bg-color-darker;
           color: $primary-color;
         }
       
-        .second-dropdown{
+        .submenu{
           padding-left: 10px;
           font-size: .8rem;
           font-family: 'Poppins';
@@ -113,14 +115,14 @@ $subtext-color: hsl(0,0%,55%);
     .dropdown-submenu {
       display: none;
       position: absolute;
-      left: 116%;
+      left: 114%;
       top: 127px;
       }
 
     .dropdown-menu > li:hover > .dropdown-submenu {
       display: block;
     }
-}
+  }
 
   .buy-btn{
     background-color: $primary-color;
