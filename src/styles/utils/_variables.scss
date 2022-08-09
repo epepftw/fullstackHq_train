@@ -4,15 +4,30 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-/// Regular font family
+///Regular Font Family
 $font-opensans: 'Open Sans';
 
+$Montserrat: 'Montserrat', sans-serif;
+
+//COLORS
+$bg-color: hsl(0, 0%, 6%);
+
+$bg-color-darker: hsl(0, 0%, 3%);
+
+$primary-color: hsl(120, 100%, 50%);
+
+$title-color: rgb(255, 255, 255);
+
+$subtext-color: hsl(0, 0%, 55%);
+
 /// @type List
-$text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue',
+  'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+  'Monaco', monospace !default;
 
 /// Copy text color
 /// @type Color
@@ -20,11 +35,11 @@ $text-color: #222 !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: #E50050 !default;
+$brand-color: #e50050 !default;
 
 /// Light grey
 /// @type Color
-$light-grey: #EDEDED !default;
+$light-grey: #ededed !default;
 
 /// Medium grey
 /// @type Color
