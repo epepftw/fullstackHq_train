@@ -436,6 +436,19 @@ body {
   }
 }
 
+//THX Section Media Query
+@media only screen and (max-width: 1199px) {
+  .section-thx p{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .section-thx {
+    padding: 40px 30px;
+  }
+}
+
 //Products Section
 
 .products {
@@ -465,6 +478,7 @@ body {
         background-color: #000;
         height: 100%;
         transition: 0.3s;
+        
 
         &:hover {
           transform: scale(1.05);
@@ -514,6 +528,31 @@ body {
     }
   }
 }
+
+//Products Media Queries
+
+@media only screen and (max-width: 1199px) {
+  .products .row{
+    margin: 0;
+  }
+
+  .products h2{
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .products .row .prod-card{
+    margin-bottom: 50px;
+  }
+  .products .row .prod-card .card{
+    margin: 0 15px;
+    box-shadow: 0px 6px 18px 4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 6px 18px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 18px 4px rgba(0,0,0,0.75);    
+  }
+}
+
 
 //Contact Section
 
