@@ -42,19 +42,6 @@
                     alt="rzr-logo"
                 /></a>
               </div>
-              <button
-                class="navbar-toggler navbar-toggler-right"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="nav-main navbar-nav ml-auto">
@@ -69,6 +56,24 @@
                     aria-expanded="false"
                   >
                     Products
+                    <span>
+                      <svg
+                        class="arrow-down"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 960 560"
+                        enable-background="new 0 0 960 560"
+                        xml:space="preserve"
+                      >
+                        <g id="Rounded_Rectangle_33_copy_4_1_">
+                          <path
+                            d="M480,344.181L268.869,131.889c-15.756-15.859-41.3-15.859-57.054,0c-15.754,15.857-15.754,41.57,0,57.431l237.632,238.937
+                            c8.395,8.451,19.562,12.254,30.553,11.698c10.993,0.556,22.159-3.247,30.555-11.698l237.631-238.937
+                            c15.756-15.86,15.756-41.571,0-57.431s-41.299-15.859-57.051,0L480,344.181z"
+                          />
+                        </g>
+                      </svg>
+                    </span>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
@@ -113,6 +118,75 @@
               </ul>
               <button class="buy-btn">Buy Now</button>
             </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- NAV FOR SMALLER SCREENS -->
+      <nav class="small-nav">
+        <div id="myNav" class="nav-overlay">
+          <div class="first-nav">
+            <div class="nav-label"><h2>PRODUCTS</h2></div>
+            <a
+              href="javascript:void(0)"
+              class="btn-mobile closebtn"
+              onclick="closeNav()"
+              >&times;</a
+            >
+          </div>
+          <div class="overlay-content">
+            <a href="#"
+              >Products<span class="right-submenu"
+                ><svg
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 330 330"
+                  style="enable-background: new 0 0 330 330"
+                >
+                  <path
+                    id="XMLID_222_"
+                    d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001
+                       c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213
+                       C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606
+                       C255,161.018,253.42,157.202,250.606,154.389z"
+                  />
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g></svg></span
+            ></a>
+            <a href="#">About</a>
+            <a href="#">Community</a>
+            <a href="#">Contact Us</a>
+            <button class="buy-mobile"><a href="#">Buy Now</a></button>
+          </div>
+        </div>
+
+        <div class="nav-mobile">
+          <div class="main-nav--content">
+            <div class="main-logo">
+              <a href="#"
+                ><img
+                  class="razer-logo"
+                  src="assets/images/svg/razer-logo.svg"
+                  alt="rzr-logo"
+              /></a>
+            </div>
+          </div>
+
+          <div class="mobile-menu">
+            <span class="open-nav" onclick="openNav()">&#9776;</span>
           </div>
         </div>
       </nav>
