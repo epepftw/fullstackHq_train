@@ -124,9 +124,9 @@
 
       <!-- NAV FOR SMALLER SCREENS -->
       <nav class="small-nav">
-        <div id="myNav" class="nav-overlay">
+        <div id="mainNav" class="nav-overlay">
           <div class="first-nav">
-            <div class="nav-label"><h2>PRODUCTS</h2></div>
+            <div class="nav-label"><h2>MENU</h2></div>
             <a
               href="javascript:void(0)"
               class="btn-mobile closebtn"
@@ -135,8 +135,8 @@
             >
           </div>
           <div class="overlay-content">
-            <a href="#"
-              >Products<span class="right-submenu"
+            <a href="#" onclick="openSubNav()"
+              >Products<span class="first-submenu"
                 ><svg
                   x="0px"
                   y="0px"
@@ -173,7 +173,7 @@
           </div>
         </div>
 
-        <div class="nav-mobile">
+        <div class="nav-mobile container">
           <div class="main-nav--content">
             <div class="main-logo">
               <a href="#"
@@ -190,6 +190,159 @@
           </div>
         </div>
       </nav>
+
+      <!-- MOBILE SUBMENU -->
+      <div class="small-nav">
+        <div id="subNav" class="nav-overlay">
+          <div class="first-nav">
+            <div class="nav-label submenu-label" onclick="closeSubNav()"><span class="second-submenu"> <svg x="0px" y="0px"
+              viewBox="0 0 512.006 512.006" style="enable-background:new 0 0 512.006 512.006;" xml:space="preserve">
+              <g>
+                <g>
+                  <path d="M388.419,475.59L168.834,256.005L388.418,36.421c8.341-8.341,8.341-21.824,0-30.165s-21.824-8.341-30.165,0
+                    L123.586,240.923c-8.341,8.341-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251
+                    c5.461,0,10.923-2.091,15.083-6.251C396.76,497.414,396.76,483.931,388.419,475.59z"/>
+                </g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              </svg>
+              </span><h2>PRODUCTS</h2>
+            </div>
+            <a
+              href="javascript:void(0)"
+              class="btn-mobile closebtn"
+              onclick="closeNav()"
+              >&times;</a
+            >
+          </div>
+          <div class="overlay-content">
+            <a href="#">Laptop</a>
+            <a href="#">Mobile</a>
+            <a href="#">Mouse & Mats</a>
+            <a href="#">Keyboards</a>
+            <a href="#" onclick="openSubNav2()">
+              Headset & Audio<span class="first-submenu"
+              ><svg
+                x="0px"
+                y="0px"
+                viewBox="0 0 330 330"
+                style="enable-background: new 0 0 330 330"
+              >
+                <path
+                  id="XMLID_222_"
+                  d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001
+                     c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213
+                     C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606
+                     C255,161.018,253.42,157.202,250.606,154.389z"
+                />
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g></svg></span
+          ></a>
+            <a href="#">Console</a>
+          </div>
+        </div>
+      </div>
+
+      <ndivav class="small-nav">
+        <div id="subNav2" class="nav-overlay">
+          <div class="first-nav">
+            <div class="nav-label submenu-label" onclick="closeSubNav2()"><span class="second-submenu"> <svg x="0px" y="0px"
+              viewBox="0 0 512.006 512.006" style="enable-background:new 0 0 512.006 512.006;" xml:space="preserve">
+              <g>
+                <g>
+                  <path d="M388.419,475.59L168.834,256.005L388.418,36.421c8.341-8.341,8.341-21.824,0-30.165s-21.824-8.341-30.165,0
+                    L123.586,240.923c-8.341,8.341-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251
+                    c5.461,0,10.923-2.091,15.083-6.251C396.76,497.414,396.76,483.931,388.419,475.59z"/>
+                </g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              </svg>
+              </span><h2>HEADSETS & AUDIO</h2>
+            </div>
+            <a
+              href="javascript:void(0)"
+              class="btn-mobile closebtn"
+              onclick="closeNav()"
+              >&times;</a
+            >
+          </div>
+          <div class="overlay-content">
+            <a href="#">Wired</a>
+            <a href="#">Wireless</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="home d-flex align-items-center justify-content-center">

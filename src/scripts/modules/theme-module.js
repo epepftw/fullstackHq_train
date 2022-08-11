@@ -44,9 +44,27 @@ AppName.Modules.ThemeModule = (function () {
 })();
 
 function openNav() {
-  document.getElementById('myNav').style.width = '100%';
+  document.getElementById('mainNav').style.width = '100%';
 }
 
 function closeNav() {
-  document.getElementById('myNav').style.width = '0%';
+  document.getElementById('mainNav').style.width = '0%';
+  document.getElementById('subNav').style.width = '0%';
+  document.getElementById('subNav2').style.width = '0%';
+}
+
+function openSubNav() {
+  document.getElementById('subNav').style.width = '100%';
+}
+
+function closeSubNav() {
+  document.getElementById('subNav').style.width = '0%';
+}
+
+function openSubNav2() {
+  document.getElementById('subNav2').style.width = '100%';
+}
+
+function closeSubNav2() {
+  document.getElementById('subNav2').style.width = '0%';
 }

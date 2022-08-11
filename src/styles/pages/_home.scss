@@ -149,6 +149,7 @@ body {
 .small-nav {
   font-family: $Montserrat;
   display: block;
+  background-color: #000;
 
   .nav-overlay {
     height: 100%;
@@ -157,7 +158,6 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
     background-color: rgb(0, 0, 0);
     overflow-x: hidden;
     transition: 0.5s;
@@ -169,10 +169,28 @@ body {
       justify-content: space-between;
 
       .nav-label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .second-submenu {
+          svg {
+            fill: $subtext-color;
+            height: 25px;
+            transition: 0.2s;
+          }
+        }
+
         h2 {
           font-size: 35px;
           font-weight: 700;
           margin-bottom: 0;
+        }
+      }
+
+      .submenu-label {
+        h2 {
+          padding-left: 30px;
         }
       }
     }
@@ -190,7 +208,7 @@ body {
     text-transform: uppercase;
     font-weight: 500;
 
-    .right-submenu {
+    .first-submenu {
       svg {
         fill: $subtext-color;
         height: 25px;
@@ -207,7 +225,7 @@ body {
       border: 2px solid $primary-color;
       transition: 0.3s ease-in-out;
       font-size: 10.4px;
-      margin-right: -9px;
+      margin-top: 30px;
       cursor: pointer;
       width: 100%;
 
@@ -238,7 +256,7 @@ body {
   .nav-overlay a:focus {
     color: $primary-color;
 
-    .right-submenu {
+    .first-submenu {
       svg {
         fill: $primary-color;
       }
@@ -251,10 +269,9 @@ body {
   }
 
   .nav-mobile {
-    background-color: $bg-color;
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 20px;
     align-items: center;
 
     .mobile-menu {
@@ -355,7 +372,7 @@ body {
   }
 
   .banner-main--content {
-    padding: 1.5em;
+    padding: 1em .5em;
   }
 }
 
