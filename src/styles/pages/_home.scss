@@ -34,7 +34,6 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,14 +316,15 @@ body {
           position: absolute;
           top: 0;
           bottom: 0;
+          left: 0;
+          right: 0;
           height: 100%;
           width: 100%;
           opacity: 0;
           transition: 0.5s ease;
-          background-color: rgba(0, 0, 0, 0.808);
+          background-color: #000000ad;
 
           .middle-text {
-            color: white;
             font-size: 20px;
             position: absolute;
             top: 50%;
@@ -358,12 +358,9 @@ body {
         }
 
         img {
-          max-width: 100%;
-          max-height: 100%;
-          transition: 0.5s ease;
-          backface-visibility: hidden;
-          opacity: 1;
           display: block;
+          width: 100%;
+          height: auto;
         }
 
         &:hover .image {
@@ -374,7 +371,6 @@ body {
           opacity: 1;
 
           .middle-text {
-            color: white;
             font-size: 20px;
             position: absolute;
             top: 50%;
@@ -399,6 +395,26 @@ body {
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .complement-section {
+    padding: 30px;
+  }
+
+  .complement-section .comfort-section .main-layer--child {
+    padding: 30px 0;
+  }
+
+  .complement-section .comfort-section .comfort-heading--title,
+  .complement-section .comfort-section .product-images h2 {
+    margin: 20px;
+  }
+
+  .complement-section .comfort-section .comfort-heading--testimonial {
+    width: 100%;
+    padding: 0;
   }
 }
 
@@ -438,7 +454,7 @@ body {
 
 //THX Section Media Query
 @media only screen and (max-width: 1199px) {
-  .section-thx p{
+  .section-thx p {
     width: 100%;
   }
 }
@@ -478,7 +494,6 @@ body {
         background-color: #000;
         height: 100%;
         transition: 0.3s;
-        
 
         &:hover {
           transform: scale(1.05);
@@ -532,27 +547,26 @@ body {
 //Products Media Queries
 
 @media only screen and (max-width: 1199px) {
-  .products .row{
+  .products .row {
     margin: 0;
   }
 
-  .products h2{
+  .products h2 {
     padding-left: 0;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .products .row .prod-card{
+  .products .row .prod-card {
     margin-bottom: 50px;
   }
-  .products .row .prod-card .card{
+  .products .row .prod-card .card {
     margin: 0 15px;
-    box-shadow: 0px 6px 18px 4px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 6px 18px 4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 6px 18px 4px rgba(0,0,0,0.75);    
+    box-shadow: 0px 6px 18px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 6px 18px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 18px 4px rgba(0, 0, 0, 0.75);
   }
 }
-
 
 //Contact Section
 
@@ -574,6 +588,10 @@ body {
 
     .form-group {
       margin-bottom: 17.6px;
+    }
+
+    .half-input {
+      display: flex;
     }
   }
 
@@ -687,6 +705,15 @@ body {
 @media only screen and (max-width: 575px) {
   .contact {
     padding: 60px 30px;
+  }
+
+  .contact .contact-first .upper-info {
+    width: 100%;
+    margin-bottom: 17.6px;
+  }
+
+  .contact .contact-form .half-input {
+    display: block;
   }
 }
 
@@ -864,6 +891,33 @@ footer {
 
   .modal-footer {
     border-top: 1px solid $primary-color;
+
+    .view-full {
+      background-color: $bg-color;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 11px 46px;
+      border-radius: 50px;
+      border: 2px solid $primary-color;
+      transition: 0.3s ease-in-out;
+      font-size: 10.4px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: #fff;
+        border: 2px solid #fff;
+
+        a {
+          color: #000;
+        }
+      }
+    }
   }
 
   .close {

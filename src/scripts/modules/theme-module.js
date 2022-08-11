@@ -13,19 +13,19 @@ AppName.Modules.ThemeModule = (function () {
       spaceBetween: 15,
       pagination: {
         el: '.swiper-pagination',
-        clickable: true
-      },breakpoints: {
+        clickable: true,
+      },
+      breakpoints: {
         640: {
           slidesPerView: 1,
-          spaceBetween: 20,
         },
         768: {
-          slidesPerView: 2,
-          spaceBetween: 40,
+          slidesPerView: 1,
+          spaceBetween: 30,
         },
         1024: {
-          slidesPerView: 3,
-          spaceBetween: 50,
+          slidesPerView: 2,
+          spaceBetween: 40,
         },
       },
     });
