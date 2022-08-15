@@ -1101,6 +1101,24 @@ footer {
   footer {
     padding: 0 20px;
   }
+
+  //Modal Media Queries
+  .modal-dialog{
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .modal-footer{
+    display: block;
+    text-align: center;
+    button{
+      width: 80%;
+      margin: 10px auto;
+    }
+    .btn.btn-secondary{
+      margin-left: -.25rem;
+    }
+  }
 }
 
 //SMALLEST
